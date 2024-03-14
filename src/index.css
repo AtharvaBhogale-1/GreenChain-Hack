@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-fam-bold{
+  font-family: 'Raleway';
+  font-weight: 500;
+}
+
+.font-fam{
+  font-family: 'Raleway';
+  font-weight: 100;
+}
+
+.underline-effect {
+    position: relative;
+    color: #000000;
+  }
+  
+  .underline-effect::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.4s ease-in-out;
+    left: 50%;
+    bottom: -5px;
+  
+  }
+  
+  .underline-effect:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+/*Chaning UNderline*/
+.underline-effect-pink {
+  position: relative;
+  color: #000;
+}
+
+.underline-effect-pink::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #79E381;
+  transition: all 0.4s ease-in-out;
+  left: 50%;
+  bottom: -5px;
+
+}
+
+.underline-effect-pink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.fade-in-text-x {
+  animation: fadeInX 2.5s;
+}
+
+.fade-in-text-y {
+  animation: fadeInY 2.5s;
+}
+
+.fade-in-card-y {
+  animation: fadeInY 0.5s;
+}
+
+.fade-in-img-y {
+  animation: fadeInY 0.25s;
+}
+
+
+@keyframes fadeInY {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Added 'px' unit */
+  }
+  100% {
+    opacity: 1; /* Changed to 1 for fully opaque */
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInX {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); /* Added 'px' unit */
+  }
+  100% {
+    opacity: 1; /* Changed to 1 for fully opaque */
+    transform: translateX(0);
+  }
+}
