@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../Assets/Logo.png'
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Logo from '../Assets/Logo.png';
 
 function Navbar() {
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const navigate = useNavigate();
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
@@ -28,12 +30,23 @@ function Navbar() {
         }
     };
 
+    const handleLoginClick = () => {
+        // Implement your custom scrolling functionality here
+        const loginSection = document.getElementById('login');
+        if (loginSection) {
+            loginSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            navigate("/"); // Redirect to the home page if loginSection is not found
+            const loginSection = document.getElementById('login');
+        }
+    };
+
     return (
-        <nav className="bg-white p-6 z-[50] font-fam-bold mx-auto fixed top-0 w-full">
-            <div className="container mx-auto flex md:flex-row flex-col items-center">
+        <nav className="bg-white md:p-6 z-[50] font-fam-bold mx-auto fixed top-0 w-full">
+            <div className="container mx-auto flex md:flex-row flex-col items-center w-[95%]">
                 <div className="flex justify-between w-full">
                     <Link to="/" className="text-black text-bold text-2xl md:text-4xl font-semibold mb-2 md:mb-0 ml-2 md:ml-4">
-                    <img src={Logo} alt="" className='h-16' />
+                        <img src={Logo} alt="" className='h-16' />
                     </Link>
                     {/* Hamburger Menu Button */}
                     <button
@@ -47,10 +60,12 @@ function Navbar() {
                 {/* Mobile Menu Links */}
                 <div className={`md:mr-[12px] text-xl md:text-lg text-center justify-center md:flex md:gap-6 items-center ${isMobileMenuOpen ? 'flex flex-col open' : 'hidden'}`}>
                     <Link to="/" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Marketplace</Link>
-                    <Link to="/work" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Listings</Link>
-                    <Link to="/contact" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Explorer</Link>
-                    <Link to="/resume" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4" onClick={handleLinkClick}>Transactions</Link>
-                    <Link to="/resume" className="text-white px-4 py-1 bg-[#79E381] nav-link mb-4" onClick={handleLinkClick}>Login</Link>
+                    <Link to="/listings" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Listings</Link>
+                    <Link to="/ppa-index" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>PPA</Link>
+                    <Link to="/learn" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Learn</Link>
+                    <Link to="/about" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4" onClick={handleLinkClick}>About</Link>
+                    {/* Use handleLoginClick to handle scrolling */}
+                    <button className="text-white px-4 py-1 bg-[#79E381] nav-link mb-4" onClick={handleLoginClick}>Login</button>
                 </div>
             </div>
         </nav>

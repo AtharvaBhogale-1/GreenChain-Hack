@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Work from './templates/Work';
 import Workflow from './templates/Workflow';
 import Home from './templates/Home';
-import Contact from './templates/Contact';
+import Learn from './templates/Learn';
 import Footer from "./components/Footer";
+import Buyer from './templates/Buyer';
+import Seller from './templates/Seller'
+import PPA from './templates/Ppa';
+import Listings from './templates/Listings';
 
 function App() {
   return (
@@ -13,9 +16,11 @@ function App() {
       <Navbar className="fixed" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Contact />} />
+        <Route path="/ppa-index" element={<PPA />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/listings" element={<Listings />} />
+        <Route path="/buyer" element={<Buyer />} />
+        <Route path="/seller" element={<Seller />} />
         <Route path="/workflow/:name/:id" element={<Workflow />} />
       </Routes>
       <Footer />
