@@ -91,7 +91,7 @@ export default Listings;
 
 const Card = ({ imageSrc, link, source, quantityAvailable, pricing, location }) => {
   return (
-    <div className="card-container p-4 rounded-lg border border-gray-200 bg-white shadow-md transition duration-300 hover:shadow-lg">
+    <div className="card-container p-4 rounded-lg border border-gray-200 bg-white shadow-md transition duration-300 hover:shadow-lg font-fam-bold">
       <a href={link}>
         <div className="relative overflow-hidden">
           <img
@@ -102,11 +102,14 @@ const Card = ({ imageSrc, link, source, quantityAvailable, pricing, location }) 
         </div>
         <div className="mt-4">
           <p className="text-lg font-semibold">{source}</p>
-          <p className="text-sm text-gray-500">Quantity Available: {quantityAvailable}</p>
-          <p className="text-sm text-gray-500">Pricing: {pricing}</p>
-          <p className="text-sm text-gray-500">Location: {location}</p>
+          <p className="text-sm text-gray-500 font-fam">Quantity Available: {quantityAvailable}</p>
+          <p className="text-sm text-gray-500 font-fam">Pricing: {pricing}</p>
+          <p className="text-sm text-gray-500 font-fam">Location: {location}</p>
         </div>
+        <button className='w-full p-1 rounded mt-4 bg-green-500'>
+          Buy Now
+        </button>
       </a>
     </div>
   );
-}; 
+};

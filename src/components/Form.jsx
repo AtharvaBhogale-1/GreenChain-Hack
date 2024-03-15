@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import loginpage from '../Assets/1197.jpg';
+import axios from 'axios';
 
 function Form(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [consoleResult, setConsoleResult] = useState('');
 
-  const handleLogin = () => {
-    // Perform login logic here
-    // For demonstration, we'll just log the username and password to the console
-    console.log('Username:', username);
-    console.log('Password:', password);
-    setConsoleResult(`Logged in as ${username}`);
+  const handleLogin = async () => {
+    try {
+      // Send POST request to backend server
+      const response = await axios.post('http://localhost:5000/login', { username, password });
+      console.log(response.data); // Log the response from the server
+      setConsoleResult('Login successful');
+    } catch (error) {
+      alert('Invalid login or password'); // Log any errors
+      setConsoleResult('Invalid password');
+    }
   };
 
   return (

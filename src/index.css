@@ -45,7 +45,7 @@
 /*Chaning UNderline*/
 .underline-effect-pink {
   position: relative;
-  color: #fff;
+  color: black;
 }
 
 .underline-effect-pink::after {
@@ -102,4 +102,19 @@
     opacity: 1; /* Changed to 1 for fully opaque */
     transform: translateX(0);
   }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-from-bottom {
+  animation: slideInFromBottom 0.9s ease-in-out forwards;
 }
