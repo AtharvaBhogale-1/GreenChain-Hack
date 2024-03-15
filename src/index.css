@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Nexa-ExtraLight";
+  src: url('./templates/assets/fonts/Nexa-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url('./templates/assets/fonts/Nexa-Heavy.ttf');
+}
+
 .font-fam-bold{
-  font-family: 'Raleway';
-  font-weight: 500;
+  font-family: 'Nexa';
 }
 
 .font-fam{
-  font-family: 'Raleway';
-  font-weight: 100;
+  font-family: 'Nexa-ExtraLight';
 }
 
 .underline-effect {
     position: relative;
-    color: #000000;
+    color: #ffffff;
   }
   
   .underline-effect::after {
@@ -22,7 +30,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #000000;
+    background-color: #fff;
     transition: all 0.4s ease-in-out;
     left: 50%;
     bottom: -5px;
@@ -37,7 +45,7 @@
 /*Chaning UNderline*/
 .underline-effect-pink {
   position: relative;
-  color: #000;
+  color: #fff;
 }
 
 .underline-effect-pink::after {

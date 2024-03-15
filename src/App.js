@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Workflow from './templates/Workflow';
 import Home from './templates/Home';
 import Learn from './templates/Learn';
 import Footer from "./components/Footer";
@@ -21,7 +20,6 @@ function App() {
         <Route path="/listings" element={<Listings />} />
         <Route path="/buyer" element={<Buyer />} />
         <Route path="/seller" element={<Seller />} />
-        <Route path="/workflow/:name/:id" element={<Workflow />} />
       </Routes>
       <Footer />
     </Router>

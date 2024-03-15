@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return(
         <div className='mt-[120px]'>
-            Contact Works!!!
+            Learn Page
         </div>
     )
 }

@@ -42,11 +42,11 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white md:p-6 z-[50] font-fam-bold mx-auto fixed top-0 w-full">
-            <div className="container mx-auto flex md:flex-row flex-col items-center w-[95%]">
-                <div className="flex justify-between w-full">
+        <nav className={`md:py-2 z-[50] font-fam-bold mx-auto fixed top-0 w-full  md:bg-transparent md:p-0 ${isMobileMenuOpen ? 'bg-green-700 p-1' : 'bg-transparent p-1'}`}>
+            <div className="container mx-auto flex md:flex-row flex-col items-center max-w-[95%] overflow-hidde">
+                <div className="flex justify-between w-full mt-2">
                     <Link to="/" className="text-black text-bold text-2xl md:text-4xl font-semibold mb-2 md:mb-0 ml-2 md:ml-4">
-                        <img src={Logo} alt="" className='h-16' />
+                        <img src={Logo} alt="" className='h-8 md:h-16' />
                     </Link>
                     {/* Hamburger Menu Button */}
                     <button

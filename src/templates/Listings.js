@@ -9,7 +9,7 @@ const sampleData = Array.from({ length: 100 }, (_, index) => ({
   source: `Hydroelectric Plant ${index + 1}`,
   quantityAvailable: `${800 - index} kWh`,
   pricing: `$${55 - index} per kWh`,
-  location: `Oregon, USA`,
+  location: `Delhi, India`,
 }));
 
 const CardsPerPage = 20;
