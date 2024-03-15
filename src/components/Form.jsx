@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import loginpage from '../Assets/1197.jpg';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 
 function Form(props) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [consoleResult, setConsoleResult] = useState('');
-    const navigate = useNavigate(); // Initialize useNavigate
 
     const handleLogin = async () => {
       try {
@@ -17,15 +15,14 @@ function Form(props) {
         if (response.status === 401) {
           console.log('nhk');
           // Redirect to homepage if authentication fails
-          navigate('/');
+          window.location.href = 'http://localhost:5173'; // Change the URL to your desired website
           return;
         }
         console.log(response.data);
         setConsoleResult('Login successful');
         // Redirect user after successful login
-        navigate('/'); // Change '/' to your desired route
+        window.location.href = 'http://localhost:5173'; // Change the URL to your desired website
       } catch (error) {
-        navigate('/'); // Change '/' to your desired route
         console.log(error.message);
         setConsoleResult('Invalid password');
       }
