@@ -42,7 +42,7 @@ function Navbar() {
     };
 
     return (
-        <nav className={`md:py-2 z-[40] font-fam-bold mx-auto w-full  md:bg-transparent md:p-0 mb-[-60px] ${isMobileMenuOpen ? 'bg-green-700 p-1' : 'bg-transparent p-1'}`} style={{ position: 'relative' }}>
+        <nav className={`md:py-2 z-[40] font-fam-bold mx-auto w-full  md:bg-transparent md:p-0 mb-[-60px] ${isMobileMenuOpen ? 'bg-white p-1' : 'bg-transparent p-1'}`} style={{ position: 'relative' }}>
             <div className="container mx-auto flex md:flex-row flex-col items-center max-w-[95%] overflow-hidde my-auto">
                 <div className="flex justify-between w-full mt-2">
                     <Link to="/" className="text-black text-bold text-2xl md:text-4xl font-semibold mb-2 md:mb-0 ml-2 md:ml-4">

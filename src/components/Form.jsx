@@ -9,12 +9,11 @@ function Form(props) {
 
   const handleLogin = async () => {
     try {
-      // Send POST request to backend server
-      const response = await axios.post('http://localhost:5000/login', { username, password });
-      console.log(response.data); // Log the response from the server
+      const response = await axios.post(`http://localhost:5000/${props.title.toLowerCase()}/login`, { username, password });
+      console.log(response.data);
       setConsoleResult('Login successful');
     } catch (error) {
-      alert('Invalid login or password'); // Log any errors
+      alert('Invalid login or password');
       setConsoleResult('Invalid password');
     }
   };

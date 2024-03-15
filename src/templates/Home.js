@@ -32,7 +32,7 @@ function Home() {
       };
     }, []);
   return (
-    <div className='mt-[-100px]'>
+    <div className='md:mt-[-100px]'>
       <div className="font-fam-bold text-left relative overflow-hidden">
         <img src={BG} alt="" className='w-full h-full md:h-full object-cover md:mt-[-120px] brightness-50'/>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl font-bold mb-8 text-[white] text-center justify-center">
@@ -45,11 +45,12 @@ function Home() {
           {/* <p className='mx-auto mt-2 md:mt-[200px] text-[10px] md:text-[30px] text-white w-[880px]'>Greenchain helps renewable energy buyers and sellers get better deals done, faster</p> */}
         </div>
       </div>
-      <div className='bg-[#4F7F50] p-10'>
+      <div className='bg-[#4F7F50] p-10 text-center text-4xl font-fam-bold text-white'>
+        <div className='m-4'>#GoGreenChain</div>
         <video
           src={Video}
           controls
-          autoPlay={false}
+          autoPlay={true}
           loop
           muted
           className='w-[500px] md:w-[1000px] ratio-fixed mx-auto'
