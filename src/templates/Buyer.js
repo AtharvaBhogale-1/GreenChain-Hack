@@ -3,7 +3,7 @@ import Form from '../components/Form'; // Import the Form component
 
 function Buyer() {
   return (
-    <Form title="BUYER" page="Seller Page" link="seller" /> // Pass props to the Form component
+    <Form title="buyer" page="Seller Page" link="seller" /> // Pass props to the Form component
   );
 }
 

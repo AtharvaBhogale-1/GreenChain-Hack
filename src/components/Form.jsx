@@ -9,11 +9,18 @@ function Form(props) {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/${props.title.toLowerCase()}/login`, { username, password });
+      const userType = props.title ? props.title.toLowerCase() : 'buyer';
+      console.log("Request Body:", { username, password, userType });
+      const response = await axios.post(`http://localhost:5000/login`, { username, password, userType });
+      if (response.status === 401) { // Access status from response
+        console.log('nhk');
+      }
       console.log(response.data);
+      console.log("Success!!");
       setConsoleResult('Login successful');
     } catch (error) {
       alert('Invalid login or password');
+      console.log(`http://localhost:5000/login`);
       setConsoleResult('Invalid password');
     }
   };
@@ -25,7 +32,7 @@ function Form(props) {
   return (
     <div className='flex h-screen mt-24'>
       <div className='mx-auto md:w-1/3 bg-white flex flex-col justify-center items-center'>
-        <h2 className='text-3xl font-bold mt-[-130px] mb-20 text-center text-[#20AE24]'>{props.title}</h2> {/* Use props.title to display the title */}
+        <h2 className='text-3xl font-bold mt-[-130px] mb-20 text-center text-[#20AE24]'>{props.title.toUpperCase()}</h2> {/* Use props.title to display the title */}
         <div className='mb-4'>
           <div className='flex gap-5'>
             <p className='font-bold mt-2'>Username</p>
