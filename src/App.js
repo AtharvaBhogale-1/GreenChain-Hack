@@ -9,7 +9,7 @@ import Seller from './templates/Seller'
 import PPA from './templates/Ppa';
 import Listings from './templates/Listings';
 import AboutPage from './templates/About';
-
+import SellerForm from './templates/SellerForm';
 function App() {
   return (
     <Router >
@@ -20,6 +20,7 @@ function App() {
         <Route path="/learn" element={<Learn />} />
         <Route path="/listings" element={<Listings />} />
         <Route path="/buyer" element={<Buyer />} />
+        <Route path="/sell" element={<SellerForm />} />
         <Route path="/seller" element={<Seller />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>

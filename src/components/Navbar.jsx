@@ -61,6 +61,7 @@ function Navbar() {
                 <div className={`md:mr-[12px] text-xl md:text-lg text-center justify-center md:flex md:gap-6 items-center ${isMobileMenuOpen ? 'flex flex-col open' : 'hidden'}`}>
                     <Link to="/" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Marketplace</Link>
                     <Link to="/listings" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Listings</Link>
+                    <Link to="/sell" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Sell</Link>
                     <Link to="/ppa-index" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>PPA</Link>
                     <Link to="/learn" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4 md:mr-2" onClick={handleLinkClick}>Learn</Link>
                     <Link to="/about" className="underline-effect-pink hover:text-[#79E381] nav-link mb-4" onClick={handleLinkClick}>About</Link>
