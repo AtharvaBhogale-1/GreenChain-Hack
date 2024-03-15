@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# GreenChain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our renewable energy marketplace, connecting sellers and buyers across India. List your renewable energy products with ease and enjoy secure transactions powered by Ethereum. Our platform ensures seamless buying and selling experiences, contributing to a sustainable future for India's energy ecosystem.
 
-## Available Scripts
+## Table of contents
+- [Features](#features)
+- [Prototype Pictures](#Prototype)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
 
-In the project directory, you can run:
+## Features
+1. **Decentralized Energy Marketplace:** Facilitating seamless product listing and smart contract-based payment transactions for buying and selling renewable energy, ensuring transparency and efficiency in transactions.
+  
+2. **Efficient Energy Exchange Platform:** Providing a platform for buyers and sellers to exchange renewable energy products effortlessly, leveraging smart contracts to streamline payment transactions and ensure trust and security.
 
-### `npm start`
+3. **Renewable Energy Trading Hub:** Serving as a centralized hub for the buying and selling of renewable energy, where users can list their products, execute transactions through smart contracts, and contribute to the global transition towards sustainable energy sources.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Blockchain-Powered Energy Marketplace:** Utilizing Solidity, Hardhat, and Ganache technologies to create a secure and transparent platform for trading renewable energy products, fostering a decentralized ecosystem for energy exchange.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **Streamlined Renewable Energy Procurement:** Empowering users to effortlessly procure renewable energy resources through a user-friendly interface, underpinned by smart contract technology, ensuring trust, and reducing transactional friction.
 
-### `npm test`
+## Prototype Pictures
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Landing Page](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/740c7e4a-a41e-4c2f-a673-7eb90dc24b53)
 
-### `npm run build`
+![Listings Portal](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/d3e235e6-1b34-410d-9965-6bb1d38f174d)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Payment Portal](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/96b43174-93f6-45fa-931a-879c5e2af160)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js: JavaScript runtime for server-side logic
+- Express.js: Web application framework for Node.js
+- MongoDB: NoSQL database for storing buyer data
+- Solidity: Programming language for writing smart contracts
+- Hardhat: Ethereum development environment for compiling, deploying, testing, and debugging smart contracts
+- Ganache: Local Ethereum blockchain for development and testing purposes
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/VedangPaithankar/Greenchain`
+2. Change directory `cd greenchain`
+3. Run command `npm i` to intsall dependencies
+4. Run front-end with `npm start`
+5. Navigate to back-end `cd GreenchainBackend`
+6. Run command `npm i` to intsall dependencies
+7. Run back-end with `nodemon server.js`
+8. Change directory to payment gateway `cd ..` then `cd Payment Gateway`
+9. Run command `npm i` to intsall dependencies
+10. Run payment gateway with `npm run dev`
+11. You're ready to use the website!!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+To utilize the platform, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Register/Login:** Create an account or log in to access the platform's features.
+   
+2. **Browse Listings:** Explore the available renewable energy products listed on the platform, filtered by type, location, or other criteria.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Purchase:** Select the desired renewable energy product and initiate the purchase process securely using smart contract-based transactions.
 
-## Learn More
+4. **Track Transactions:** Monitor the progress of your transactions, including payment processing and delivery of the purchased renewable energy.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Sell Your Energy:** If you're a renewable energy provider, list your products on the platform to reach potential buyers and facilitate seamless transactions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Feedback and Support:** Provide feedback on your experience and reach out to customer support for any assistance needed during the process.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7. **Stay Updated:** Stay informed about the latest listings, trends, and developments in the renewable energy marketplace to make informed decisions.
