@@ -1,0 +1,30 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40%;
+}
+
+.account-info {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add more CSS as needed to style your components */
