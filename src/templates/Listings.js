@@ -77,6 +77,7 @@ function Listings() {
         {currentSellers.map((seller, index) => (
           <Card
             key={index}
+            imageSrc={seller.image}
             source={seller['energy type']} // Pass username as source
             name={seller.seller}
             quantityAvailable={seller.quantity} // Pass quantity as quantityAvailable
@@ -112,7 +113,7 @@ const Card = ({ imageSrc, name, link, source, quantityAvailable, pricing, locati
         <div className="mt-4">
           <p className="text-base font-fam-bold">{name} - <span style={{ textTransform: 'capitalize' }}>{source}</span></p>
           <p className="text-sm text-gray-500 font-fam"> <span className='font-bold'>Quantity Available: </span>{quantityAvailable} MW</p>
-          <p className="text-sm text-gray-500 font-fam"> <span className='font-bold'>Pricing:</span>  $ {pricing}</p>
+          <p className="text-sm text-gray-500 font-fam"> <span className='font-bold'>Pricing:</span>  ₹ {pricing}</p>
           <p className="text-sm text-gray-500 font-fam"> <span className='font-bold'>Location: </span> {location}</p>
         </div>
         <button className='w-full p-1 rounded mt-4 bg-green-500'>

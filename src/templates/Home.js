@@ -81,7 +81,7 @@ function Home() {
       <div className='bg-[#83D485] h-[1080px] md:h-[600px] mx-auto w-[100%] flex flex-col justify-center items-center relative'>
       <div className="absolute inset-0 bg-black opacity-40" id="login"></div> {/* Overlay */}
         <p className={isVisible ? 'slide-in-from-bottom text-white text-[15px] md:text-4xl font-bold w-[80%] text-center mb-10 md:mb-20 relative z-10' : 'text-white text-[15px] md:text-4xl font-bold w-[80%] text-center mb-10 md:mb-20 relative z-10'}>
-          The GreenChain Marketplace is where India's leading energy advisors and buyers source the best PPAs
+          The GreenChain Marketplace is where India's leading energy advisors and buyers source the best PPAs for the world
         </p>
         <div className='md:flex md:gap-20 mx-auto'>
           <div className={isVisible ? 'w-[300px] md:w-[550px] h-[400px] md:h-[350px] py-2 bg-white relative mx-auto mb-10 md:mb-0 slide-in-from-bottom': 'w-[300px] md:w-[550px] h-[400px] md:h-[350px] py-2 bg-white relative mx-auto mb-10 md:mb-0'}>

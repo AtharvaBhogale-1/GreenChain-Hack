@@ -12,9 +12,10 @@ const sellerSchema = new mongoose.Schema({
   energyType: String,
   quantity: Number,
   price: Number,
-  location: String
+  location: String,
+  image: String
 });
 
-const Seller = mongoose.model('Seller', sellerSchema, 'seller-deets');
+const Seller = mongoose.model('Seller', sellerSchema, 'listing-deets');
 
 module.exports = Seller;

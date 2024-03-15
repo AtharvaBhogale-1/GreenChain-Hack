@@ -16,8 +16,10 @@ mongoose.connect(process.env.DB_CONNECTION_STRING + 'GreenChain', { useNewUrlPar
 const buyerRoutes = require('./Routes/buyerRoutes'); // Import routes
 const validateUser = require('./Routes/validateUser'); // Import routes
 const sellerRoutes = require('./Routes/sellerRoutes'); // Import routes
+const sellRoutes = require('./Routes/sellRoutes'); // Import routes
 app.use('/buyer', buyerRoutes); // Use routes
 app.use('/login', validateUser); // Use routes
 app.use('/seller', sellerRoutes); // Use routes
+app.use('/sell', sellRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
