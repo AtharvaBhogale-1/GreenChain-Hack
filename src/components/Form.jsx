@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import loginpage from '../Assets/1197.jpg';
 import axios from 'axios';
 
@@ -18,6 +18,10 @@ function Form(props) {
       setConsoleResult('Invalid password');
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []);
 
   return (
     <div className='flex h-screen mt-24'>

@@ -36,14 +36,14 @@ function Navbar() {
         if (loginSection) {
             loginSection.scrollIntoView({ behavior: 'smooth' });
         } else {
-            navigate("/"); // Redirect to the home page if loginSection is not found
+            navigate("/buyer"); // Redirect to the home page if loginSection is not found
             const loginSection = document.getElementById('login');
         }
     };
 
     return (
-        <nav className={`md:py-2 z-[50] font-fam-bold mx-auto fixed top-0 w-full  md:bg-transparent md:p-0 ${isMobileMenuOpen ? 'bg-green-700 p-1' : 'bg-transparent p-1'}`}>
-            <div className="container mx-auto flex md:flex-row flex-col items-center max-w-[95%] overflow-hidde">
+        <nav className={`md:py-2 z-[40] font-fam-bold mx-auto w-full  md:bg-transparent md:p-0 mb-[-60px] ${isMobileMenuOpen ? 'bg-green-700 p-1' : 'bg-transparent p-1'}`} style={{ position: 'relative' }}>
+            <div className="container mx-auto flex md:flex-row flex-col items-center max-w-[95%] overflow-hidde my-auto">
                 <div className="flex justify-between w-full mt-2">
                     <Link to="/" className="text-black text-bold text-2xl md:text-4xl font-semibold mb-2 md:mb-0 ml-2 md:ml-4">
                         <img src={Logo} alt="" className='h-8 md:h-16' />

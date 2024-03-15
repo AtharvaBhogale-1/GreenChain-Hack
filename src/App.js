@@ -8,11 +8,12 @@ import Buyer from './templates/Buyer';
 import Seller from './templates/Seller'
 import PPA from './templates/Ppa';
 import Listings from './templates/Listings';
+import AboutPage from './templates/About';
 
 function App() {
   return (
     <Router >
-      <Navbar className="fixed" />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ppa-index" element={<PPA />} />
@@ -20,6 +21,7 @@ function App() {
         <Route path="/listings" element={<Listings />} />
         <Route path="/buyer" element={<Buyer />} />
         <Route path="/seller" element={<Seller />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </Router>

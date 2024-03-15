@@ -32,7 +32,7 @@ function Home() {
       };
     }, []);
   return (
-    <div>
+    <div className='mt-[-100px]'>
       <div className="font-fam-bold text-left relative overflow-hidden">
         <img src={BG} alt="" className='w-full h-full md:h-full object-cover md:mt-[-120px] brightness-50'/>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-6xl font-bold mb-8 text-[white] text-center justify-center">

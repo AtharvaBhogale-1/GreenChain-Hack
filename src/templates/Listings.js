@@ -51,7 +51,7 @@ function Listings() {
   };
 
   return (
-    <div className='mt-40 px-4'>
+    <div className='mt-20 px-4'>
       <div className="search-filter-container mb-4 flex justify-between items-center">
         <input
           type="text"
