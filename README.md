@@ -22,11 +22,11 @@ Welcome to our renewable energy marketplace, connecting sellers and buyers acros
 
 ## Prototype Pictures
 
-![Landing Page](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/740c7e4a-a41e-4c2f-a673-7eb90dc24b53)
+![Landing Page](https://github.com/VedangPaithankar/Greenchain/blob/main/GreenChain.png)
 
-![Listings Portal](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/d3e235e6-1b34-410d-9965-6bb1d38f174d)
+![Listings Portal](https://github.com/VedangPaithankar/Greenchain/blob/main/GreenChainqew.png)
 
-![Payment Portal](https://github.com/Avineesh28/HexGen-Real-Time-HexCode-generator/assets/79737929/96b43174-93f6-45fa-931a-879c5e2af160)
+![Payment Portal](https://github.com/VedangPaithankar/Greenchain/blob/main/GreenChainfas.png)
 
 ## Requirements
 
