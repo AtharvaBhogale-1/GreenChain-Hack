@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import subs from '../Assets/Subscription.png';
+import { useNavigate } from 'react-router-dom'; // Import useHistory from react-router-dom
 
 function EnergyForm() {
+  const navigate = useNavigate(); // Initialize useHistory hook
+  
   const [companyName, setCompanyName] = useState('');
   const [energyType, setEnergyType] = useState('');
   const [quantity, setQuantity] = useState('');
@@ -13,7 +16,9 @@ function EnergyForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     try {
+      // Make API call to submit form data
       const response = await axios.post(`http://localhost:5000/sell`, {
         companyName,
         energyType,
@@ -24,6 +29,7 @@ function EnergyForm() {
         password
       });
       console.log(response.data);
+      
       // Clear form fields after successful submission
       setCompanyName('');
       setEnergyType('');
@@ -32,7 +38,11 @@ function EnergyForm() {
       setLocation('');
       setPassword('');
       setSubscription('');
+
+      // Redirect to '/' after successful submission
+      navigate('/'); // Use history.push to navigate to the specified route
     } catch (error) {
+      navigate('/');
       console.error(error);
     }
   };

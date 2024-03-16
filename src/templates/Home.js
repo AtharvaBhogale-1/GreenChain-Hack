@@ -45,17 +45,18 @@ function Home() {
           {/* <p className='mx-auto mt-2 md:mt-[200px] text-[10px] md:text-[30px] text-white w-[880px]'>Greenchain helps renewable energy buyers and sellers get better deals done, faster</p> */}
         </div>
       </div>
-      <div className='bg-[#4F7F50] p-10 text-center text-4xl font-fam-bold text-white'>
-        <div className='m-4'>#GoGreenChain</div>
+      <div className='p-10 text-center text-4xl font-fam-bold text-white relative'>
+    <div className='m-4'>#GoGreenChain</div>
         <video
-          src={Video}
-          controls
-          autoPlay={true}
-          loop
-          muted
-          className='w-[500px] md:w-[1000px] ratio-fixed mx-auto'
+            src={Video}
+            controls
+            autoPlay={true}
+            loop
+            muted
+            className='w-[500px] md:w-[1000px] ratio-fixed mx-auto'
         />
-      </div>
+        <div className='bg-home absolute inset-0 bg-cover bg-center brightness-50 z-[-1]'></div>
+    </div>
       <div className='flex flex-col md:flex-row gap-2 md:gap-[130px] justify-center m-10 font-fam-bold '>
         <div className='flex md:flex-col gap-10 justify-center text-center items-center'>
           <img src={biomass} alt="" className='h-[80px] md:h-[140px]'/>

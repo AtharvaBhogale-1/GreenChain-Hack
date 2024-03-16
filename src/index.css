@@ -119,3 +119,7 @@
   animation: slideInFromBottom 0.9s ease-in-out forwards;
   animation-delay: 0.7s; /* Adjust the delay value as needed */
 }
+
+.bg-home{
+  background-image: url('./templates/assets/Images/bghome.png');
+}
